@@ -1,7 +1,6 @@
 package gunsnhoney.springframework.di.sfgdi;
 
 import gunsnhoney.springframework.di.sfgdi.controllers.*;
-import gunsnhoney.springframework.di.sfgdi.services.PrimaryGreetingService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -32,9 +31,6 @@ public class SfgDiApplication {
 		System.out.println("-------- Constructor");
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
-
-
-
 
 	}
 
